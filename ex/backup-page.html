@@ -1,0 +1,115 @@
+<aside
+            class="flex flex-col h-screen p-sm gap-base sticky top-0 bg-surface-container-low dark:bg-on-background border-r border-outline-variant w-64 shrink-0">
+            <div class="px-sm py-md">
+                <span class="font-headline-md text-headline-md font-extrabold text-primary">SolarClinic</span>
+                <p class="font-label-md text-label-md text-on-surface-variant mt-xs">District Dashboard</p>
+            </div>
+            <div class="flex-1 space-y-xs overflow-y-auto">
+                <!-- Navigation Items -->
+                <a class="flex items-center gap-sm px-sm py-base bg-primary-container text-on-primary-container rounded-lg font-bold transition-all active:scale-[0.98]"
+                    href="#">
+                    <span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
+                    <span class="font-label-md text-label-md">Analytics</span>
+                </a>
+                <a class="flex items-center gap-sm px-sm py-base text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all active:scale-[0.98]"
+                    href="#">
+                    <span class="material-symbols-outlined" data-icon="map">map</span>
+                    <span class="font-label-md text-label-md">Map</span>
+                </a>
+                <a class="flex items-center gap-sm px-sm py-base text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all active:scale-[0.98]"
+                    href="#">
+                    <span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+                    <span class="font-label-md text-label-md">Deployments</span>
+                </a>
+                <a class="flex items-center gap-sm px-sm py-base text-on-surface-variant hover:bg-surface-container-high rounded-lg transition-all active:scale-[0.98]"
+                    href="#">
+                    <span class="material-symbols-outlined" data-icon="notifications_active">notifications_active</span>
+                    <span class="font-label-md text-label-md">Alerts</span>
+                </a>
+            </div>
+            <div class="p-sm bg-surface-container-lowest rounded-lg border border-outline-variant mb-sm">
+                <div class="flex items-center gap-sm">
+                    <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+                        <span class="material-symbols-outlined text-on-secondary-container"
+                            data-icon="person">person</span>
+                    </div>
+                    <div>
+                        <p class="font-label-md text-label-md font-bold">District Manager</p>
+                        <p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Central Region</p>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="w-full bg-error text-on-error font-emergency-callout text-emergency-callout py-sm rounded-lg hover:opacity-90 active:scale-95 transition-all">
+                Emergency Response
+            </button>
+        </aside>
+
+                    
+                    
+<!-- Triage/Disease Heatmap List (Bottom) -->
+                    <div class="col-span-12 lg:col-span-12 bg-white rounded-xl border border-outline-variant p-md">
+                        <div class="flex items-center justify-between mb-md">
+                            <div>
+                                <h2 class="font-headline-md text-headline-md text-on-surface">Active Disease Monitoring
+                                </h2>
+                                <p class="font-body-sm text-body-sm text-on-surface-variant">Reported cases within last
+                                    72 hours across the district.</p>
+                            </div>
+                            <button
+                                class="px-md h-touch-target-min border border-outline text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-variant transition-colors">
+                                Export Data (CSV)
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+                            <div
+                                class="flex items-center gap-md p-md bg-error-container/20 rounded-xl border border-error-container">
+                                <div class="w-12 h-12 bg-error-container rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-on-error-container"
+                                        data-icon="water_drop">water_drop</span>
+                                </div>
+                                <div>
+                                    <p class="font-label-md text-label-md text-on-error-container">CHOLERA</p>
+                                    <p class="font-headline-md text-headline-md text-on-background">14 <span
+                                            class="text-label-md font-normal">+2</span></p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-md p-md bg-tertiary-container/20 rounded-xl border border-tertiary-container">
+                                <div
+                                    class="w-12 h-12 bg-tertiary-container rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-on-tertiary-container"
+                                        data-icon="thermostat">thermostat</span>
+                                </div>
+                                <div>
+                                    <p class="font-label-md text-label-md text-on-tertiary-container">DENGUE</p>
+                                    <p class="font-headline-md text-headline-md text-on-background">42 <span
+                                            class="text-label-md font-normal">+8</span></p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-md p-md bg-secondary-container/20 rounded-xl border border-secondary-container">
+                                <div
+                                    class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-on-secondary-container"
+                                        data-icon="child_care">child_care</span>
+                                </div>
+                                <div>
+                                    <p class="font-label-md text-label-md text-on-secondary-container">MEASLES</p>
+                                    <p class="font-headline-md text-headline-md text-on-background">03 <span
+                                            class="text-label-md font-normal">--</span></p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-md p-md bg-primary-container/10 rounded-xl border border-outline-variant">
+                                <div class="w-12 h-12 bg-surface-container rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-on-surface-variant"
+                                        data-icon="medical_services">medical_services</span>
+                                </div>
+                                <div>
+                                    <p class="font-label-md text-label-md text-on-surface-variant">TOTAL TRIAGE</p>
+                                    <p class="font-headline-md text-headline-md text-on-background">289</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

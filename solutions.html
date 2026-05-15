@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SolarClinic - Solutions</title>
+    <script src="js/tailwindcss.js"></script>
+    <link href="css/googleapis.css" rel="stylesheet" />
+    <link href="css/fonts.googleapis.css" rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+
+        .bento-item {
+            grid-column: span 12;
+        }
+
+        @media (min-width: 768px) {
+            .bento-item-sm {
+                grid-column: span 6;
+            }
+
+            .bento-item-lg {
+                grid-column: span 12;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .bento-item-sm {
+                grid-column: span 4;
+            }
+
+            .bento-item-md {
+                grid-column: span 6;
+            }
+
+            .bento-item-lg {
+                grid-column: span 8;
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- TopNavBar -->
+    <header class="bg-surface dark:bg-on-background shadow-sm fixed top-0 left-0 right-0 z-[100]">
+        <!-- TopNavBar Implementation -->
+        <nav class="bg-surface dark:bg-on-background shadow-sm sticky top-0 z-50">
+            <div class="flex items-center justify-between px-5 w-full max-w-[1440px] mx-auto h-[70px]">
+                <!-- Left: Logo -->
+                <div class="text-2xl font-bold text-primary">
+                    SolarClinic
+                </div>
+                <!-- Center: Menu -->
+                <div id="menu" class="hidden md:flex justify-center items-center gap-8 flex-1">
+
+                    <a class="text-gray-700 hover:text-primary transition-colors" href="index.html">
+                        Impact
+                    </a>
+
+                    <a class="text-primary font-bold border-b-2 border-primary pb-1" href="solutions.html">
+                        Solutions
+                    </a>
+
+                    <a class="text-gray-700 hover:text-primary transition-colors" href="partners.html">
+                        Partners
+                    </a>
+
+                    <a class="text-gray-700 hover:text-primary transition-colors" href="analytics.html">
+                        Analytics
+                    </a>
+
+                </div>
+
+                <!-- Right: Button + Mobile toggle -->
+                <div class="flex items-center gap-3">
+
+                    <!-- Deploy Button (Desktop) -->
+                    <button class="hidden md:flex bg-primary text-white px-6 h-[42px]
+                items-center justify-center rounded-lg font-semibold
+                hover:opacity-90 active:scale-95">
+                        Deploy
+                    </button>
+
+                    <!-- Mobile Button -->
+                    <button id="menuBtn"
+                        class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-xl">
+                        ☰
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden flex flex-col gap-4 px-5 pb-4">
+
+                <a href="index.html">Impact</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="partners.html">Partners</a>
+                <a href="analytics.html">Analytics</a>
+
+                <button class="bg-primary text-white px-6 h-[42px] rounded-lg font-semibold w-full">
+                    Deploy
+                </button>
+
+            </div>
+        </nav>
+    </header>
+    <main class="pt-touch-target-min">
+
+        <!-- Hero Section -->
+        <section class="relative min-h-[819px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover"
+                    data-alt="A futuristic medical clinic built on a sleek, high-tech floating platform in a calm, flooded tropical region. The structure features integrated solar glass panels and white modular walls, reflecting a clean humanitarian aesthetic. The lighting is soft morning sunlight, creating a hopeful and resilient mood with a palette of teal, white, and soft sky blue."
+                    src="image/hero-2.png" />
+                <div class="absolute inset-0 bg-gradient-to-r from-on-background/80 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 w-full max-w-[1440px] mx-auto px-gutter py-xl">
+                <div class="max-w-3xl">
+                    <span
+                        class="inline-flex items-center gap-xs px-sm py-xs bg-primary-container text-on-primary-container rounded-full font-label-md text-label-md mb-md">
+                        <span class="material-symbols-outlined text-[16px]" data-icon="bolt">bolt</span>
+                        ADAPTIVE TECHNOLOGY
+                    </span>
+                    <h1 class="font-headline-xl text-headline-xl text-white mb-md">Resilient Health Infrastructure for a
+                        Changing Climate.</h1>
+                    <p class="font-body-lg text-body-lg text-white/90 mb-lg max-w-2xl">
+                        Deploying modular, solar-powered medical units to the world's most vulnerable flood zones. Our
+                        infrastructure operates when the grid fails, providing life-saving care in the heart of the
+                        crisis.
+                    </p>
+                    <div class="flex flex-wrap gap-md">
+                        <button
+                            class="bg-primary text-on-primary h-touch-target-min px-lg rounded-lg font-bold hover:shadow-lg transition-all active:scale-95 flex items-center gap-base">
+                            View Blueprint
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                        </button>
+                        <button
+                            class="bg-white/10 backdrop-blur-md text-white border border-white/20 h-touch-target-min px-lg rounded-lg font-bold hover:bg-white/20 transition-all">
+                            Technical Specs
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Solutions Bento Grid -->
+        <section class="py-xl bg-surface">
+            <div class="max-w-[1440px] mx-auto px-gutter">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-xl gap-md">
+                    <div class="max-w-2xl">
+                        <h2 class="font-headline-lg text-headline-lg text-on-surface mb-base">The Architecture of
+                            Resilience</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Four core pillars designed to
+                            maintain operational integrity in extreme environments, ensuring healthcare delivery never
+                            pauses.</p>
+                    </div>
+                    <div class="flex items-center gap-sm">
+                        <span class="flex items-center gap-xs text-secondary font-bold">
+                            <span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+                            WHO Certified
+                        </span>
+                        <span class="flex items-center gap-xs text-secondary font-bold">
+                            <span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+                            UNICEF Verified
+                        </span>
+                    </div>
+                </div>
+                <div class="bento-grid">
+                    <!-- Solution 1: Floating Solar Clinics -->
+                    <div
+                        class="bento-item bento-item-lg bg-white rounded-xl shadow-sm border border-outline-variant p-md overflow-hidden flex flex-col md:flex-row gap-lg">
+                        <div class="flex-1 flex flex-col justify-center">
+                            <div
+                                class="w-12 h-12 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center mb-md">
+                                <span class="material-symbols-outlined text-headline-md"
+                                    data-icon="tsunami">tsunami</span>
+                            </div>
+                            <h3 class="font-headline-md text-headline-md mb-base">Floating Solar Clinics</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-md">
+                                Engineered for high-risk flood zones, these units use amphibious pontoon systems. They
+                                are 100% renewable, utilizing integrated solar skins to generate 15kW of daily power.
+                            </p>
+                            <ul class="space-y-base mb-md">
+                                <li class="flex items-center gap-base text-body-sm font-label-md">
+                                    <span class="material-symbols-outlined text-primary"
+                                        data-icon="done_all">done_all</span>
+                                    Zero-Emission Hull Design
+                                </li>
+                                <li class="flex items-center gap-base text-body-sm font-label-md">
+                                    <span class="material-symbols-outlined text-primary"
+                                        data-icon="done_all">done_all</span>
+                                    Modular Clinic Internal Layout
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-1 rounded-lg overflow-hidden h-64 md:h-auto">
+                            <img class="w-full h-full object-cover"
+                                data-alt="A clean, minimalist interior of a high-tech modular clinic. Bright, clinical white surfaces are complemented by soft teal accents and state-of-the-art medical monitors. The room is flooded with natural daylight from wide windows looking out over a calm water surface, creating a peaceful and professional environment."
+                                src="image/floating solar clinics.png" />
+                        </div>
+                    </div>
+                    <!-- Solution 2: AI Triage -->
+                    <div
+                        class="bento-item bento-item-sm bg-primary-container text-on-primary-container rounded-xl p-md flex flex-col">
+                        <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center mb-md">
+                            <span class="material-symbols-outlined text-headline-md"
+                                data-icon="neurology">neurology</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-base">AI-Powered Triage</h3>
+                        <p class="font-body-md text-body-md opacity-90 mb-md">
+                            Edge computing allows for diagnostic support in zero-connectivity areas. Our local AI models
+                            analyze vitals and symptoms without needing a cloud connection.
+                        </p>
+                        <div class="mt-auto pt-md border-t border-white/10">
+                            <span class="text-label-md font-label-md uppercase tracking-wider">Status: Active</span>
+                        </div>
+                    </div>
+                    <!-- Solution 3: LoRa Mesh Network -->
+                    <div
+                        class="bento-item bento-item-md bg-secondary-container text-on-secondary-container rounded-xl p-6 flex flex-col md:flex-row gap-6 shadow-sm hover:shadow-md transition">
+
+                        <!-- LEFT CONTENT -->
+                        <div class="flex-1">
+
+                            <!-- Icon -->
+                            <div class="w-12 h-12 rounded-lg bg-white/40 flex items-center justify-center mb-4">
+                                <span class="material-symbols-outlined text-2xl">
+                                    hub
+                                </span>
+                            </div>
+
+                            <!-- Title -->
+                            <h3 class="font-semibold text-xl md:text-2xl mb-2 leading-snug">
+                                LoRa Mesh Network
+                            </h3>
+
+                            <!-- Description -->
+                            <p class="text-sm md:text-base leading-relaxed opacity-90">
+                                Low-power wide-area network infrastructure that works when cell towers fail.
+                                Enables clinic-to-clinic communication and emergency beaconing.
+                            </p>
+                        </div>
+
+                        <!-- RIGHT CONTENT -->
+                        <div
+                            class="flex-1 flex flex-col justify-center items-center gap-4 bg-white/10 rounded-xl p-6 text-center">
+
+                            <span class="material-symbols-outlined text-6xl opacity-90">
+                                cell_tower
+                            </span>
+
+                            <div>
+                                <div class="text-2xl font-bold">15km</div>
+                                <div class="text-sm opacity-80">Effective Range</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Solution 4: Smart Cold-Chain -->
+                    <div
+                        class="bento-item bento-item-sm bg-tertiary-container text-on-tertiary-container rounded-xl p-md flex flex-col">
+                        <div class="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center mb-md">
+                            <span class="material-symbols-outlined text-headline-md" data-icon="ac_unit">ac_unit</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-base">Smart Cold-Chain</h3>
+                        <p class="font-body-md text-body-md opacity-90">
+                            IoT-monitored vaccine storage with ultra-low power consumption. Maintains critical
+                            temperatures for up to 72 hours without external power input.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specs / Interactive Blueprint -->
+        <section class="py-xl bg-white overflow-hidden">
+            <div class="max-w-[1440px] mx-auto px-gutter">
+                <div class="text-center mb-xl">
+                    <h2 class="font-headline-lg text-headline-lg text-on-surface">Unit Specification 2.4</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto">Detailed technical
+                        breakdown of the SolarClinic Mark IV humanitarian unit.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
+                    <div class="lg:col-span-7 relative">
+                        <!-- Simulated interactive map/diagram -->
+                        <div
+                            class="aspect-video bg-surface-container-low rounded-2xl border border-outline-variant relative group cursor-crosshair overflow-hidden shadow-lg">
+                            <img class="w-full h-full object-cover opacity-60"
+                                data-alt="A detailed 3D technical blueprint of a modular health unit, shown in high-contrast line art with digital data overlays. The aesthetic is modern and engineering-focused, featuring glowing teal highlights on critical components like solar panels and water filtration units against a clean light gray background."
+                                src="image/unit-specification.png" />
+                            <!-- Hotspots -->
+                            <div class="absolute top-1/4 left-1/3">
+                                <div
+                                    class="w-8 h-8 bg-primary rounded-full animate-pulse border-4 border-white/50 flex items-center justify-center cursor-pointer">
+                                    <span class="material-symbols-outlined text-white text-sm"
+                                        data-icon="info">info</span>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-1/3 right-1/4">
+                                <div
+                                    class="w-8 h-8 bg-secondary rounded-full animate-pulse border-4 border-white/50 flex items-center justify-center cursor-pointer">
+                                    <span class="material-symbols-outlined text-white text-sm"
+                                        data-icon="bolt">bolt</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-md flex justify-center gap-lg">
+                            <div class="flex items-center gap-xs text-label-md text-on-surface-variant">
+                                <span class="w-3 h-3 rounded-full bg-primary"></span> Power Core
+                            </div>
+                            <div class="flex items-center gap-xs text-label-md text-on-surface-variant">
+                                <span class="w-3 h-3 rounded-full bg-secondary"></span> Filtration
+                            </div>
+                            <div class="flex items-center gap-xs text-label-md text-on-surface-variant">
+                                <span class="w-3 h-3 rounded-full bg-tertiary"></span> Storage
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 space-y-md">
+                        <div class="p-md bg-surface-container-low rounded-xl border border-outline-variant">
+                            <h4 class="font-label-md text-label-md text-primary uppercase mb-base">Energy System</h4>
+                            <div class="flex justify-between items-center mb-xs">
+                                <span class="font-body-md">Daily Generation</span>
+                                <span class="font-bold">15.2 kWh</span>
+                            </div>
+                            <div class="w-full bg-surface-variant h-2 rounded-full overflow-hidden">
+                                <div class="bg-secondary h-full w-[85%]"></div>
+                            </div>
+                        </div>
+                        <div class="p-md bg-surface-container-low rounded-xl border border-outline-variant">
+                            <h4 class="font-label-md text-label-md text-primary uppercase mb-base">Water Management</h4>
+                            <div class="flex justify-between items-center mb-xs">
+                                <span class="font-body-md">Purification Rate</span>
+                                <span class="font-bold">500 L / Day</span>
+                            </div>
+                            <div class="w-full bg-surface-variant h-2 rounded-full overflow-hidden">
+                                <div class="bg-primary h-full w-[65%]"></div>
+                            </div>
+                        </div>
+                        <div class="p-md bg-surface-container-low rounded-xl border border-outline-variant">
+                            <h4 class="font-label-md text-label-md text-primary uppercase mb-base">Communication</h4>
+                            <div class="flex justify-between items-center mb-xs">
+                                <span class="font-body-md">Mesh Uptime</span>
+                                <span class="font-bold">99.9%</span>
+                            </div>
+                            <div class="w-full bg-surface-variant h-2 rounded-full overflow-hidden">
+                                <div class="bg-primary-container h-full w-[99%]"></div>
+                            </div>
+                        </div>
+                        <button
+                            class="w-full h-touch-target-min bg-on-background text-white rounded-lg font-bold hover:bg-on-surface-variant transition-colors">
+                            Download Full CAD Datasheet
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-highest dark:bg-on-background border-t border-outline-variant">
+        <div
+            class="w-full py-lg px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-md max-w-[1440px] mx-auto">
+            <div class="flex flex-col gap-xs items-center md:items-start">
+                <div class="font-headline-sm text-headline-sm font-bold text-primary">SolarClinic</div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 SolarClinic. Supporting UNICEF &amp;
+                    WHO humanitarian efforts.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-md">
+                <a class="text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-all"
+                    href="#">Privacy Policy</a>
+                <a class="text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-all"
+                    href="#">Open Source License</a>
+                <a class="text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-all"
+                    href="#">Partner Portal</a>
+            </div>
+            <div class="flex gap-md">
+                <span
+                    class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
+                    data-icon="language">language</span>
+                <span
+                    class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors cursor-pointer"
+                    data-icon="share">share</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- mine js code -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#705d00",
+                        "on-surface-variant": "#3d4946",
+                        "on-tertiary-fixed": "#221b00",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface": "#f9f9f9",
+                        "outline-variant": "#bcc9c5",
+                        "on-tertiary-container": "#4c3f00",
+                        "on-primary-fixed": "#00201c",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2f3131",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#7ddc7a",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-secondary-container": "#0c7521",
+                        "primary-fixed": "#8df5e4",
+                        "inverse-primary": "#70d8c8",
+                        "on-secondary-fixed": "#002204",
+                        "on-surface": "#1a1c1c",
+                        "surface-dim": "#dadada",
+                        "on-primary-container": "#f4fffb",
+                        "tertiary-fixed": "#ffe16e",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#98f994",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f3f3f3",
+                        "on-background": "#1a1c1c",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary-fixed-dim": "#e8c41d",
+                        "surface-tint": "#006b5f",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary": "#006e1c",
+                        "on-tertiary-fixed-variant": "#544600",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#00685d",
+                        "outline": "#6d7a77",
+                        "on-primary-fixed-variant": "#005048",
+                        "secondary-container": "#98f994",
+                        "primary-container": "#008376",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#c9a900",
+                        "on-secondary-fixed-variant": "#005313",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed-dim": "#70d8c8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "gutter": "24px",
+                        "touch-target-min": "48px",
+                        "base": "8px",
+                        "margin-desktop": "80px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "xl": "64px",
+                        "margin-mobile": "16px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "emergency-callout": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "emergency-callout": ["20px", { "lineHeight": "24px", "fontWeight": "800" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

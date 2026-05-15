@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SolarClinic - Partners</title>
+    <script src="js/tailwindcss.js"></script>
+    <link href="css/googleapis.css" rel="stylesheet" />
+    <link href="css/fonts.googleapis.css" rel="stylesheet" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body class="font-body-md text-on-surface">
+
+    <!-- TopNavBar -->
+    <header class="bg-surface dark:bg-on-background shadow-sm fixed top-0 left-0 right-0 z-[100]">
+        <!-- TopNavBar Implementation -->
+    <nav class="bg-surface dark:bg-on-background shadow-sm sticky top-0 z-50">
+        <div class="flex items-center justify-between px-5 w-full max-w-[1440px] mx-auto h-[70px]">
+            <!-- Left: Logo -->
+            <div class="text-2xl font-bold text-primary">
+                SolarClinic
+            </div>
+            <!-- Center: Menu -->
+            <div id="menu" class="hidden md:flex justify-center items-center gap-8 flex-1">
+
+                <a class="text-gray-700 hover:text-primary transition-colors" href="index.html">
+                    Impact
+                </a>
+
+                <a class="text-gray-700 hover:text-primary transition-colors" href="solutions.html">
+                    Solutions
+                </a>
+
+                <a class="text-primary font-bold border-b-2 border-primary pb-1" href="partners.html">
+                    Partners
+                </a>
+
+                <a class="text-gray-700 hover:text-primary transition-colors" href="analytics.html">
+                    Analytics
+                </a>
+
+            </div>
+
+            <!-- Right: Button + Mobile toggle -->
+            <div class="flex items-center gap-3">
+
+                <!-- Deploy Button (Desktop) -->
+                <button class="hidden md:flex bg-primary text-white px-6 h-[42px]
+                items-center justify-center rounded-lg font-semibold
+                hover:opacity-90 active:scale-95">
+                    Deploy
+                </button>
+
+                <!-- Mobile Button -->
+                <button id="menuBtn"
+                    class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg border border-gray-300 text-xl">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden flex flex-col gap-4 px-5 pb-4">
+
+            <a href="index.html">Impact</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="partners.html">Partners</a>
+            <a href="analytics.html">Analytics</a>
+
+            <button class="bg-primary text-white px-6 h-[42px] rounded-lg font-semibold w-full">
+                Deploy
+            </button>
+
+        </div>
+    </nav>
+    </header>
+
+    <main class="pt-[48px]">
+
+        <!-- Hero / Header Section -->
+        <section class="relative bg-surface py-xl px-margin-mobile md:px-margin-desktop">
+            <div class="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-lg items-center">
+                <div class="space-y-md">
+                    <span
+                        class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full font-label-md text-label-md uppercase tracking-wider">Strategic
+                        Alliance</span>
+                    <h1 class="font-headline-xl text-headline-xl text-on-background">Scaling Global Resilience Together.
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        SolarClinic partners with leading NGOs and governmental bodies to deliver AI-driven healthcare
+                        infrastructure to the world's most vulnerable flood-prone regions.
+                    </p>
+                    <div class="flex flex-wrap gap-sm">
+                        <button
+                            class="bg-primary text-on-primary h-touch-target-min px-lg rounded-lg font-headline-md text-body-md flex items-center justify-center shadow-sm">
+                            Request Partnership
+                        </button>
+                        <button
+                            class="border-2 border-primary text-primary h-touch-target-min px-lg rounded-lg font-headline-md text-body-md flex items-center justify-center hover:bg-surface-container-low transition-colors">
+                            Download Field Reports
+                        </button>
+                    </div>
+                </div>
+                <div class="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-sm">
+                    <img alt="Humanitarian efforts" class="w-full h-full object-cover"
+                        data-alt="A professional, high-end photograph showcasing a modern solar-powered medical clinic in a remote, flood-prone landscape. Medical professionals wearing clean uniforms are seen consulting with local residents under a bright, high-key sky. The scene is illuminated by soft, natural morning light, emphasizing a mood of hope, technical precision, and humanitarian resilience with a teal and white color palette."
+                        src="image/hero-3.png" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Metrics Dashboard -->
+        <section class="bg-surface-container-low py-xl px-margin-mobile md:px-margin-desktop">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="mb-lg flex flex-col md:flex-row md:items-end justify-between gap-md">
+                    <div>
+                        <h2 class="font-headline-lg text-headline-lg text-on-background">Impact Metrics</h2>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Real-time performance of
+                            humanitarian deployments.</p>
+                    </div>
+                    <div class="flex items-center gap-xs text-secondary font-label-md">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span>Live Sync: Global Network Active</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                    <!-- Bento Grid Metric 1 -->
+                    <div
+                        class="bg-surface p-lg rounded-xl border border-outline-variant shadow-sm flex flex-col justify-between">
+                        <div>
+                            <span
+                                class="material-symbols-outlined text-primary text-headline-lg">volunteer_activism</span>
+                            <h3 class="font-label-md text-label-md text-on-surface-variant mt-sm">Lives Impacted</h3>
+                            <div class="font-headline-xl text-headline-xl text-primary mt-xs">1.2M+</div>
+                        </div>
+                        <div class="mt-md bg-secondary-container h-2 w-full rounded-full">
+                            <div class="bg-secondary h-full w-[85%] rounded-full"></div>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">Across 14 flood-prone
+                            nations.</p>
+                    </div>
+                    <!-- Bento Grid Metric 2 -->
+                    <div class="bg-primary text-on-primary p-lg rounded-xl shadow-sm flex flex-col justify-between">
+                        <div>
+                            <span class="material-symbols-outlined text-on-primary text-headline-lg">speed</span>
+                            <h3 class="font-label-md text-label-md opacity-80 mt-sm">Response Time Reduction</h3>
+                            <div class="font-headline-xl text-headline-xl mt-xs">-64%</div>
+                        </div>
+                        <div class="mt-md font-body-sm text-body-sm opacity-90">
+                            AI-driven logistics automation enabled by solar-powered data hubs.
+                        </div>
+                    </div>
+                    <!-- Bento Grid Metric 3 -->
+                    <div
+                        class="bg-surface p-lg rounded-xl border border-outline-variant shadow-sm flex flex-col justify-between">
+                        <div>
+                            <span
+                                class="material-symbols-outlined text-tertiary text-headline-lg">medical_services</span>
+                            <h3 class="font-label-md text-label-md text-on-surface-variant mt-sm">Field Clinics Active
+                            </h3>
+                            <div class="font-headline-xl text-headline-xl text-on-surface mt-xs">482</div>
+                        </div>
+                        <div class="mt-md flex gap-xs">
+                            <span class="h-2 w-2 rounded-full bg-secondary"></span>
+                            <span class="h-2 w-2 rounded-full bg-secondary"></span>
+                            <span class="h-2 w-2 rounded-full bg-secondary"></span>
+                            <span class="h-2 w-2 rounded-full bg-secondary-container"></span>
+                            <span class="h-2 w-2 rounded-full bg-secondary-container"></span>
+                        </div>
+                        <p class="font-body-sm text-body-sm text-on-surface-variant mt-sm">82% powered by 100% renewable
+                            energy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies -->
+        <section class="py-xl px-margin-mobile md:px-margin-desktop">
+            <div class="max-w-[1440px] mx-auto">
+                <div class="flex flex-col md:flex-row gap-lg">
+                    <!-- Case Study 1: UNICEF -->
+                    <div class="flex-1 group">
+                        <div
+                            class="aspect-video rounded-xl overflow-hidden mb-md shadow-sm border border-outline-variant">
+                            <img alt="UNICEF Partnership"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A high-contrast editorial photograph showing a UNICEF-branded solar medical module being airlifted into a lush, tropical valley. The lighting is dramatic and clear, highlighting the high-tech equipment against the vibrant natural environment. The visual style is professional and documentary, utilizing a clean palette with subtle teal accents consistent with the SolarClinic brand."
+                                src="image/digital-immunization.png" />
+                        </div>
+                        <div class="space-y-sm">
+                            <div class="flex items-center gap-xs font-label-md text-label-md text-primary">
+                                <span class="material-symbols-outlined text-[16px]">public</span>
+                                PARTNERSHIP WITH UNICEF
+                            </div>
+                            <h3 class="font-headline-md text-headline-md text-on-background">Digital Immunization
+                                Tracking in South Asia</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">
+                                Deploying 120 SolarClinic hubs to automate vaccination records for 400,000 children in
+                                remote river deltas during monsoon season.
+                            </p>
+                            <a class="inline-flex items-center gap-xs font-label-md text-label-md text-primary font-bold group-hover:gap-sm transition-all"
+                                href="#">
+                                Read Full Case Study <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Case Study 2: BRAC -->
+                    <div class="flex-1 group">
+                        <div
+                            class="aspect-video rounded-xl overflow-hidden mb-md shadow-sm border border-outline-variant">
+                            <img alt="BRAC Partnership"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="A clean, minimalist interior shot of a mobile medical clinic where a community health worker is using a tablet-based AI diagnostic tool. The room is bright, white, and organized, reflecting a state-of-the-art medical environment despite being in a remote location. The lighting is soft and professional, with a color scheme dominated by teal, medical green, and cool grays."
+                                src="image/flood-resilient.png" />
+                        </div>
+                        <div class="space-y-sm">
+                            <div class="flex items-center gap-xs font-label-md text-label-md text-secondary">
+                                <span class="material-symbols-outlined text-[16px]">handshake</span>
+                                STRATEGIC COLLABORATION WITH BRAC
+                            </div>
+                            <h3 class="font-headline-md text-headline-md text-on-background">Flood-Resilient Health Hubs
+                                in Bangladesh</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">
+                                Establishing a network of decentralized solar clinics that remain operational during
+                                peak flooding, reducing maternal mortality rates by 30%.
+                            </p>
+                            <a class="inline-flex items-center gap-xs font-label-md text-label-md text-secondary font-bold group-hover:gap-sm transition-all"
+                                href="#">
+                                Read Full Case Study <span class="material-symbols-outlined">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnership CTA Section -->
+        <section class="bg-on-background text-on-primary py-xl px-margin-mobile md:px-margin-desktop text-center">
+            <div class="max-w-[800px] mx-auto space-y-md">
+                <h2 class="font-headline-lg text-headline-lg">Begin a Collaborative Journey.</h2>
+                <p class="font-body-lg text-body-lg opacity-80">
+                    Join SolarClinic, UNICEF, and BRAC in building the next generation of humanitarian health
+                    infrastructure. Our technology is open for deployment in your region.
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-md pt-base">
+                    <button
+                        class="bg-primary-container text-on-primary-container h-touch-target-min px-lg rounded-lg font-headline-md text-body-md w-full md:w-auto">
+                        Inquire About Partnership
+                    </button>
+                    <button
+                        class="bg-transparent border border-outline text-on-primary h-touch-target-min px-lg rounded-lg font-headline-md text-body-md w-full md:w-auto hover:bg-surface-variant/10 transition-colors">
+                        Access Policy Briefs
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container-highest dark:bg-on-background full-width bottom">
+        <div
+            class="w-full py-lg px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-md max-w-[1440px] mx-auto">
+            <div class="flex flex-col items-center md:items-start gap-xs">
+                <div class="font-headline-sm text-headline-sm font-bold text-primary">SolarClinic</div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">
+                    © 2024 SolarClinic. Supporting UNICEF &amp; WHO humanitarian efforts.
+                </p>
+            </div>
+            <nav class="flex flex-wrap justify-center gap-md">
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-opacity"
+                    href="#">Privacy Policy</a>
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-opacity"
+                    href="#">Open Source License</a>
+                <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-opacity"
+                    href="#">Partner Portal</a>
+            </nav>
+            <div class="flex gap-md">
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">language</span>
+                <span
+                    class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">share</span>
+            </div>
+        </div>
+    </footer>
+
+     <!-- main js code -->
+     <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "on-background": "#1a1c1c",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "primary-container": "#008376",
+                        "on-primary-fixed": "#00201c",
+                        "primary-fixed": "#8df5e4",
+                        "surface": "#f9f9f9",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-secondary-fixed-variant": "#005313",
+                        "tertiary": "#705d00",
+                        "surface-variant": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "on-primary-container": "#f4fffb",
+                        "secondary-container": "#98f994",
+                        "tertiary-fixed-dim": "#e8c41d",
+                        "on-tertiary-container": "#4c3f00",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-primary": "#70d8c8",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "outline": "#6d7a77",
+                        "primary": "#00685d",
+                        "on-tertiary-fixed-variant": "#544600",
+                        "surface-dim": "#dadada",
+                        "outline-variant": "#bcc9c5",
+                        "inverse-surface": "#2f3131",
+                        "surface-container": "#eeeeee",
+                        "on-surface": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary-container": "#c9a900",
+                        "tertiary-fixed": "#ffe16e",
+                        "on-secondary-container": "#0c7521",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-tint": "#006b5f",
+                        "secondary-fixed": "#98f994",
+                        "on-secondary-fixed": "#002204",
+                        "secondary-fixed-dim": "#7ddc7a",
+                        "on-tertiary-fixed": "#221b00",
+                        "on-primary-fixed-variant": "#005048",
+                        "primary-fixed-dim": "#70d8c8",
+                        "secondary": "#006e1c",
+                        "on-surface-variant": "#3d4946",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "touch-target-min": "48px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "xs": "4px",
+                        "margin-desktop": "80px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xl": "64px",
+                        "base": "8px",
+                        "lg": "48px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "emergency-callout": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "emergency-callout": ["20px", { "lineHeight": "24px", "fontWeight": "800" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
