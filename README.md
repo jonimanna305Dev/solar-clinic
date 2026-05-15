@@ -1,2 +1,2 @@
-# solarc-linic
+# solar-clinic
 SolarClinic tailwiend css project
